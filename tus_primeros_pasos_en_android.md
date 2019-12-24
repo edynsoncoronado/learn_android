@@ -28,3 +28,15 @@ Resumiendo: Programar Android nativo nos pone al frente de todo lo nuevo que vay
 - 8GB de RAM: Es lo recomendable. Lo mínimo sería cuatro.
 - Café, Mate o Té: Cualquier cosa que te mantenga despierto por muchas horas. Probablemente el requisito mas importante :)
 
+### Aprender Java:
+- Si leen por ahí que Java está muriendo, no se preocupen: No es así. Esto lo digo con seguridad porque Java es un lenguaje multiplataforma. Hoy día muchos bancos confían su sistema a Java Spring (un framework de desarrollo web y APIs).
+- Minecraft esta desarrollado en Java y siguen lanzando actualizaciones, aunque muchos estemos de acuerdo que la optimización es un tema complejo de tratar. [Minecraft Plugins con Spigot](https://medium.com/@maxwellnewage/diario-de-un-desarrollador-1-minecraft-plugins-con-spigot-d2c79942b0cf)
+- También se han desarrollado muchas aplicaciones para escritorio, aunque en este caso yo me inclino más por usar Electron, una librería de interfaces visuales usando Javascript.
+
+1. Es fundamental entender que Java corre en una JVM (Java Virtual Machine), que viene a ser una máquina virtual con su propio entorno para correr sus aplicaciones.
+1. Otra particularidad es que Java soporta el paradigma de programación orientada a objetos, estructurada, funcional y reactiva. Por lo tanto, es un lenguaje multiparadigma que se va a adecuar a nuestras necesidades.
+
+#### Cursos:
+- [Píldoras Informáticas](https://www.youtube.com/watch?list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&v=coK4jM5wvko)
+- [freeCodeCamp](https://www.youtube.com/watch?v=grEKMHGYyns)
+- [libros O'Reilly](https://www.oreilly.com/search/?query=java&extended_publisher_data=true&highlight=true&include_assessments=false&include_case_studies=true&include_courses=true&include_orioles=true&include_playlists=true&include_collections=true&include_notebooks=true&is_academic_institution_account=false&source=user&sort=relevance&facet_json=true&page=0)
