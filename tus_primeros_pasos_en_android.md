@@ -40,4 +40,11 @@ Resumiendo: Programar Android nativo nos pone al frente de todo lo nuevo que vay
     - [freeCodeCamp](https://www.youtube.com/watch?v=grEKMHGYyns)
     - [libros O'Reilly](https://www.oreilly.com/search/?query=java&extended_publisher_data=true&highlight=true&include_assessments=false&include_case_studies=true&include_courses=true&include_orioles=true&include_playlists=true&include_collections=true&include_notebooks=true&is_academic_institution_account=false&source=user&sort=relevance&facet_json=true&page=0)
 
+### Aprender lo más básico de Android:
+- Android, si bien es llamado un lenguaje de programación, en realidad es un SDK de Java.
+- Entonces podríamos decir que Android es un conjunto de librerías que contienen super clases, las cuales nos permiten heredarlas y convertir nuestras clases Java en componentes de una aplicación en Android.
+
+Es importante que aprendas lo básico e indispensable, pero que todavía no te centres en lo avanzado. Con poder crear un “Hola mundo” y verlo desde tu celular o emulador, es suficiente.
+- [Documentación oficial de Google](https://developer.android.com/?hl=es-419)
+- [TUTORIALES](https://developer.android.com/guide?hl=es-419)
 
