@@ -48,3 +48,77 @@ Es importante que aprendas lo básico e indispensable, pero que todavía no te c
 - [Documentación oficial de Google](https://developer.android.com/?hl=es-419)
 - [TUTORIALES](https://developer.android.com/guide?hl=es-419)
 
+
+### Se aprende haciendo:
+1. Empezar con una idea:
+   - Tienen que pensar que es lo que realmente quieren hacer con esto que están dedicando horas a ver vídeos y leer libros.
+   - Parados en Android, podemos crear aplicaciones. Lo primero que deberías hacer es salir a la calle y detectar necesidades, sean tuyas o de otras personas.
+   - No por estar aprendiendo vas a negarte a crear un producto.
+1. Manos a la obra:
+   - Consigue un trabajo mientras estudias, y no después.
+       - Un trabajo te genera enfoques, porque hay gente que ya tiene una idea y necesita ejecutarla. Cuando te la transmite, ahí es donde notás si realmente aprendiste lo suficiente. La respuesta suele ser: no.
+       - Porque los problemas reales son mucho más grandes y complejos que cualquier curso o tutorial. Pero esto no es un fallo de tu esquema de aprendizaje, al contrario, es parte del flujo.
+   - El primer paso es que la app sea estéticamente aceptable. Tenemos que aprender los fundamentos de [Material Design](https://material.io/develop/android/)
+       - Si tu app no responde a estos principios, podría no ser atractiva, y un producto entra por los ojos.
+1. Marco de referencia:
+   - Las ideas no suelen salir de la nada. Debemos investigar previamente apps similares a lo que intentamos hacer. De esta manera desarrollamos un marco de referencia, y aprendemos de los errores y aciertos de los ejemplos que estamos investigando.
+1. MockUp:
+   - Si bien aprendimos a maquetar una app, todavía no podemos diseñar nada si no sabemos como estructurarla. 
+   - Una vez tenemos claras las pantallas, tomamos lapiz y papel y empezamos a dibujar un bosquejo del detalle de cada una. Unos botones, la lista, como se va a ver el detalle, la posición de los input de usuario y contraseña. Todo lo que nos defina la estructura en la que nos vamos a basar.
+   - Esto es un MockUp. También hay herramientas web para hacerlo, pero recomiendo en primera instancia que sea a mano. Esto es un proceso psicológico, dado que con el lapiz tenemos mayores libertades, y nos podemos centrar en la idea más que en el uso de una herramienta.
+
+Ahora llegó el momento de aprender más intensamente.
+
+### Ampliar panorama:
+1. Nuestra primer pantalla es el Login Social. Hay varias formas de hacer esto, pero la más popular en este momento es usar los servicios de Firebase.
+   - [Integrar Firebase](https://firebase.google.com/docs/android/setup?hl=es-419)
+   - [Implementar login social](https://firebase.google.com/docs/auth?hl=es-419)
+1. Una vez el usuario ingresa a la app y llega a la pantalla principal, la home. Pero tenemos un problema: Aunque el usuario logre ingresar, en nuestro flujo actual siempre vamos a pedirle que ingrese cuando se reinicie la app.
+   - [Persistir la Información: SharedPreferences de Android](https://developer.android.com/reference/android/content/SharedPreferences), la cual nos va a permitir mantener una sesión de usuario activa, incluso si se desinstalara la app (investigar allow backup para esto).
+1. Algo que no consideramos es agregar una función de logout, quizá implementando un menú lateral con una opción que indique dicho comportamiento. 
+   - [DrawerLayout](https://danielme.com/2018/12/19/diseno-android-menu-lateral-con-navigation-drawer/)
+1. Desarrollo de una API: Lo que necesitamos para gestionar los datos de los bares, es una API que nos permita accederlos desde nuestra app en Android.
+   - [Udemy: API's en Laravel](https://www.udemy.com/course/desarrollo-de-apis-y-sitios-web-con-laravel-php-de-cero/?referralCode=7F8CA581D96D4AC834FE)
+   - [Artículos: Desarrollo de API con NodeJS](https://medium.com/@maxwellnewage/como-crear-una-api-con-express-y-nodejs-27adf2640a30)
+   - [Cómo crear vistas en ExpressJS](https://medium.com/@maxwellnewage/como-crear-vistas-en-expressjs-59192ead65bb)
+   - [Cómo enlazar vistas en Plug con ExpressJS](https://medium.com/@maxwellnewage/como-enlazar-vistas-en-pug-con-expressjs-157a1064b0e7)
+1. Consumo de API: Una vez tenemos la API desarrollada, sea de terceros o nuestra, debemos consumirla a través de nuestra aplicación.
+   - [Implementar Retrofit en nuestra App](https://medium.com/@maxwellnewage/como-implementar-retrofit-en-nuestra-app-6ba7cee6e0a5)
+1. Representar la información en una lista con CardViews [Tutorial detallado](https://guides.codepath.com/android/using-the-recyclerview)
+1. Dónde queda? [API de Google Maps](https://developers.google.com/maps/documentation/android-sdk/intro)
+1. Crear una galeria de fotos [ViewPager](https://developer.android.com/training/animation/screen-slide). En el medio también aprenderemos a manejar Fragments, un componente de Android que nació con el surgimiento de las tabletas, si mal recuerdo en la versión 4.
+
+### Finalmente:
+- Nuestra pantalla de favoritos se podría manejar de dos maneras:
+   - SharedPreferences: Guardamos la información de los bares favoritos localmente.
+   - API: Guardamos la información en la API asociado a un id de usuario. Luego la recuperamos mediante algún método GET.
+
+La primera forma puede ser compleja, dado que debemos guardar objetos, y SharedPreferences no lo soporta. Como alternativa, podemos usar la librería Gson que ya habíamos importado con Retrofit. Nuestro algoritmo sería:
+   - Recibimos objeto lista.
+   - Convertimos objeto en json string mediante Gson.
+   - Guardamos json string en SharedPreferences.
+   - Pedimos objeto json string.
+   - Convertimos json string a objeto lista mediante Gson.
+   - Recorremos la lista con nuestro Adapter del RecyclerView.
+
+### Hay una motivación y un producto. Difícil detenernos, ¿no?
+Si aprendemos sobre la marcha, podemos lograr adquirir lo que llamo “conocimiento inconsciente”. Aprendemos sin darnos cuenta, porque estamos poniéndolo a prueba y experimentando en un caso real.
+
+Todo lo aprendido en este proyecto:
+   - Fundamentos en Java y Android.
+   - Tomar ejemplos como punto de partida para tu proyecto.
+   - Cómo armar mocks.
+   - Los principios de Material Design.
+   - Consumo e implementación de APIs con Retrofit.
+   - Listas con RecyclerViews y CardViews.
+   - Galerías con ViewPager.
+   - Geolocalización y mapeo con Google Maps API.
+   - SharedPreferences para mantener sesiones. 
+   - Manejo de Firebase.
+   - Menus laterales con DrawerLayout.
+   - Fragments.
+   - Gson.
+
+Y a todo esto deberíamos sumarle ciertas habilidades adquiridas con la gestión de un proyecto. :)
+
+* [Fuente](https://medium.com/@maxwellnewage/diario-de-un-desarrollador-19-tus-primeros-pasos-en-android-c0796bc64d6c)
