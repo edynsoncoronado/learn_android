@@ -13,3 +13,18 @@ Resumiendo: Programar Android nativo nos pone al frente de todo lo nuevo que vay
 
 * Android: Java o Kotlin.
 * React: Javascript o Typescript.
+
+### Antes de empezar:
+- [Cómo aprender a programar desde cero?](https://medium.com/@maxwellnewage/como-aprender-a-programar-desde-cero-ac8f05a0da07)
+- [Udemy: Android desde cero](https://www.udemy.com/course/aprende-a-desarrollar-aplicaciones-android-desde-cero/?referralCode=0B03BB2E354F8EBC83DD)
+
+### Herramientas indespensables:
+- [Intellij](https://www.jetbrains.com/es-es/idea/): Con este IDE vas a poder correr aplicaciones en Java. Con la versión Community te alcanza.
+- [Android Studio](https://developer.android.com/studio): Es fundamental. Con este IDE vas a correr aplicaciones en Android. La instalación ya viene con el SDK incluido.
+- [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html): Es el kit de desarrollo de Java. Cualquier versión de la 8 o superior te sirve.
+- [Visual Studio Code](https://code.visualstudio.com/): Esto podría ser opcional. Se trata de un editor de código creado por Microsoft. El más famoso hasta la fecha. A veces puede que necesites editar un archivo puntual y no quieras abrir un IDE.
+- Windows, Linux o Mac: Android se puede desarrollar en cualquiera de estos sistemas operativos. Aunque la instalación en Linux puede ser un poco más compleja.
+- Disco SSD: Un disco sólido, indispensable. Android Studio accede al disco constantemente, por lo que tener una velocidad buena te va a beneficiar en muchos aspectos, especialmente en la compilación.
+- 8GB de RAM: Es lo recomendable. Lo mínimo sería cuatro.
+- Café, Mate o Té: Cualquier cosa que te mantenga despierto por muchas horas. Probablemente el requisito mas importante :)
+
